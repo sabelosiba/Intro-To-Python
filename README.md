@@ -36,3 +36,13 @@ notes
   - is a collection of key-value pairs.
   - declared using curly braces
   - accessed using keys
+
+# Operators
+- are instructions that perform operations on variables and values
+  # Arithmetic
+  - Addition (+), Multiplication (*), Division (/) *returns float*, modulus or Remainder (%)
+  # comparison
+  - evaluates two variables or values and returns a boolean
+  # Logical
+  - "and" , "or" , "not"
+    
