@@ -60,4 +60,17 @@ notes
 # Classes and Objects
 - CLASSES -> help label and organize related functions and atrributes
           -> we define a class with uppercase letter name
-          -> we create an initialisation function that get called every time an instance of a class is created.  
+          -> we create an initialisation function that get called every time an instance of a class is created.
+
+# Factorial exercise
+```bash
+def factorial(num):
+    if type(num) is not int:
+        return None
+    if num < 0 :
+        return None
+    if num == 0:
+        return 1
+    if num%2 == 0:
+        return num * factorial(num-1)
+```
