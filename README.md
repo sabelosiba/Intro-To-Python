@@ -46,3 +46,9 @@ notes
   # Logical
   - "and" , "or" , "not"
     
+# Control flow
+- if statement allows you to execute a block of code only if certain condition is met.
+- else statement will be executed if condition is false.
+- for loop is used to iterate over a list or an iterable objects
+
+  
