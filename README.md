@@ -8,3 +8,9 @@ notes
 - complex numbers
 - strings -> collection of characters, plus "+" used to concatenate strings.
 - Booleans -> true or false
+
+# Data structures
+- allow for the storage of a list of values in a single variable.
+  # List
+  - contains any data type
+  - 
