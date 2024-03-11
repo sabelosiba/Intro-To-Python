@@ -51,4 +51,13 @@ notes
 - else statement will be executed if condition is false.
 - for loop is used to iterate over a list or an iterable objects
 
-  
+# Functions
+- is like a machine that takes in inputs and produce output
+- 'def' used to define functions
+- 'return' used to specify output
+- 'None' represent the absence of a value, and it is default return value for functions that explicitly does return anything
+
+# Classes and Objects
+- CLASSES -> help label and organize related functions and atrributes
+          -> we define a class with uppercase letter name
+          -> we create an initialisation function that get called every time an instance of a class is created.  
