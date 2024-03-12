@@ -1,5 +1,5 @@
-# Python-week1
-notes
+# Python Week 1 Notes
+
 
 # Variables and Types
 - variable is the basic unit of a program
@@ -74,3 +74,36 @@ def factorial(num):
     if num%2 == 0:
         return num * factorial(num-1)
 ```
+
+# 3. BASIC DATA TYPES
+  # Ints and Floats
+  - we use int class to convert value to integer ( whole number)
+  - converting from one type to another is called casting
+  - Python does not round floats to integer when casting
+  ``` bash
+  Int(8.9) # outputs 8
+  ```
+  - round function can mitigate the approximation and rounding errors from floats calculations
+  - The Int class -> you can pass string and convert it to an integer
+                  -> you can also pass a second arguments which represents a base of the first argument and the class will convert it from the given base to base 10
+                   ``` bash
+                   Int('100') # outputs 100
+                   Int('100' , 2 ) # outputs 4
+                   ```
+  - The Decimal class -> you can pass in a value and decimal object will with decimal place for the given precision
+                      -> good practise is to pass in a float as a string to prevent the float to be added all leading digits of the float. 
+                       ``` bash
+                       getcontext().prec=2
+                       Decimal(1)/Decimal(3)  # outputs 0.33
+                       Decimal('3.14') # outputs 3.14
+                       ```
+
+    # Booleans
+    - Integers anything except 0 is true, therefore float 0 and imaginary 0 is false
+    - Strings anything other than empty string is true, therefore '' is false
+    - Data structures empty list or dictionary is false,
+
+   # Strings
+   - string slicing is taking a portion of a string and returning it e.g "My name is Iron-Man" string[0:7] *returns* My name
+   - F-strings allows to insert variables and expression inside curly brackets in a string. e.g f'My Number is : {5}'
+   - also with f-string we can do rounding and number formatting e.g f'Pi is: {math.pi:.2f}'    and    'Pi is: {}'.format(math.pi)
