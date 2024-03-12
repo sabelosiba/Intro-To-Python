@@ -107,3 +107,12 @@ def factorial(num):
    - string slicing is taking a portion of a string and returning it e.g "My name is Iron-Man" string[0:7] *returns* My name
    - F-strings allows to insert variables and expression inside curly brackets in a string. e.g f'My Number is : {5}'
    - also with f-string we can do rounding and number formatting e.g f'Pi is: {math.pi:.2f}'    and    'Pi is: {}'.format(math.pi)
+
+   # Bytes
+   - is a sequence of data
+     ```bash
+     Bytes(4) # creates empty bytes object 4b long
+     smiley = Bytes('*emoji*', 'utf-8') # creates bytes object with data
+     smiley.decode('utf-8') # decode function to turn a bytes object back into a string
+     ```
+     - Bytes objects are immutable(can be modified)
