@@ -115,4 +115,32 @@ def factorial(num):
      smiley = Bytes('*emoji*', 'utf-8') # creates bytes object with data
      smiley.decode('utf-8') # decode function to turn a bytes object back into a string
      ```
-     - Bytes objects are immutable(can be modified)
+     - Bytes objects are immutable(cannot be modified)
+
+
+# 4. BASIC DATA STRUCTURES
+  # Lists
+  - list slicing is same as string slicing
+  - a third value can be used to control the step e.g mylist[start : end : step]
+  - negative values is to step backwards through the list
+  - to add item to end of list use append()
+  - to insert item aat specific position use insert(*position, value*)
+  - 2 ways to remove -> remove() removes item based on value, no index
+                     -> pop() removes and return item at the end of list
+  - when we assign a list to a variable, the variable stores a reference to the list, if we modify the list through one variable, the changes will reflect in other variables that reference the same list.
+  - For list changes on one list to another dont reflect we use copy() method
+
+  # sets
+  - is defined using curly brackets
+  - also defined by passing any iterable object in the cinstructor
+  ```bash
+  myset = { 'a', 'b', 'c'}  # curly brackets
+  myset = set(('a', 'b', 'c')) # constructor
+  ```
+  - used to remove duplicates, as sets only contains unique values
+  - you cannot access elements in a set using index or slicing
+  - add elements using add() and remove using discard()
+
+
+  # Dictionary
+    
