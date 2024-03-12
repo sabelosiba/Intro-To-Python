@@ -86,13 +86,13 @@ def factorial(num):
   - round function can mitigate the approximation and rounding errors from floats calculations
   - The Int class -> you can pass string and convert it to an integer
                   -> you can also pass a second arguments which represents a base of the first argument and the class will convert it from the given base to base 10
-                   ``` bash
+                   ```bash
                    Int('100') # outputs 100
                    Int('100' , 2 ) # outputs 4
                    ```
   - The Decimal class -> you can pass in a value and decimal object will with decimal place for the given precision
                       -> good practise is to pass in a float as a string to prevent the float to be added all leading digits of the float. 
-                       ``` bash
+                       ```bash
                        getcontext().prec=2
                        Decimal(1)/Decimal(3)  # outputs 0.33
                        Decimal('3.14') # outputs 3.14
