@@ -141,7 +141,20 @@ def factorial(num):
   - used to remove duplicates, as sets only contains unique values
   - you cannot access elements in a set using index or slicing
   - add elements using add() and remove using discard()
+  # Tuples
+  - declared with parenteses and are ordered
+  - tuples are immutable( cannot be modified)
+  - more memory effecient than lists
 
 
   # Dictionary
-    
+  - stores values in key : value pairs
+  - values can be any data and duplicated, whreas keys cannot be repeated and must be immutable
+  - resulting object for .keys() is immutable, to change this object, you need to convert it to a list
+  ```bash
+  
+  ```
+
+
+  # List Comprehensions
+  -  
