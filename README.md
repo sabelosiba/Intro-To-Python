@@ -157,4 +157,11 @@ def factorial(num):
 
 
   # List Comprehensions
-  -  
+  - consists of square brackets cotaining the expression, which is executed for each element along the for loop to iterate over each element, while returning a copy of the list.
+  - Syntax : *newCopyList = [ expression(element) for element in oldList if condition]*
+  - it enables you to filter / apply functions to every item in a list.
+
+  # Dictionary and Comprehensions
+  - used to create a new dictionary from an itearble structure
+  - Syntax : *dict = { key:value for (key,value) in Iterable}*
+  - 
