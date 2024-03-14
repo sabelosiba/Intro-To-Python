@@ -160,8 +160,82 @@ def factorial(num):
   - consists of square brackets cotaining the expression, which is executed for each element along the for loop to iterate over each element, while returning a copy of the list.
   - Syntax : *newCopyList = [ expression(element) for element in oldList if condition]*
   - it enables you to filter / apply functions to every item in a list.
+  - 
 
   # Dictionary and Comprehensions
   - used to create a new dictionary from an itearble structure
   - Syntax : *dict = { key:value for (key,value) in Iterable}*
-  - 
+
+
+# 5. Basic Control Flow
+  # If and Else
+  - are conditional statements, which decide the direction of the flow of program execution
+  - if-statement is used to decide whether a certain block will be executed or not
+  ```bash
+      # if statement Syntax
+      if condition:
+        # Statements to execute if
+        # condition is true
+
+      # if-else statement Syntax
+      if (condition):
+        # Executes this block if
+        # condition is true
+      else:
+        # Executes this block if
+        # condition is false
+
+      # if-elif-else Syntax
+      if (condition):
+        statement
+      elif (condition):
+        statement
+      .
+      .
+      else:
+        statement
+  ```
+
+   # While
+   - is used to execute a block of statements repeatedly until the condition is meet.
+   - when the condition becomes false, the line immediately after the loop is executed
+   ```bash
+      # Syntax of While loop
+       while expression:
+          statement(s)
+   ```
+   - break statement will exit the loop and move to next line of code outside the loop
+   
+   ```bash
+      # break statement     
+      # break the loop as soon it sees 'e'
+      i = 0
+      a = 'geek'
+  
+      while i < len(a): 
+        if a[i] == 'e' : 
+          i += 1
+          break
+          
+        print('Current Letter :', a[i]) 
+        i += 1
+
+   ```
+   - *Outputs* -> Current Letter : g
+     
+   - continue statement will skip over any lines within the loop that comes after it and jump back to loop to start the next iteration
+  ```bash
+      # continue statement           
+      # Prints all letters except 'e' 
+      i = 0
+      a = 'geek' 
+      while i < len(a): 
+        if a[i] == 'e': 
+          i += 1
+          continue
+          
+        print('Current Letter :', a[i]) 
+        i += 1
+   ```
+   - *Outputs* -> Current Letter : g
+                  Current Letter : k
