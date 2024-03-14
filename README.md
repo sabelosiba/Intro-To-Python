@@ -239,3 +239,11 @@ def factorial(num):
    ```
    - *Outputs* -> Current Letter : g
                   Current Letter : k
+
+  # For Loop
+  - it is used for iterating over an iterable like String, Tuple, List, Set, or Dictionary
+  ```bash
+   # for loop syntax
+   for var in iterable:
+    # statements
+  ``` 
