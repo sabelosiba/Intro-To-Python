@@ -1,0 +1,2 @@
+1. Learn objects and classes in python
+2. learn aoutomation scripting
