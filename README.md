@@ -1,7 +1,7 @@
 # Python Week 1 Notes
 
 
-# Variables and Types
+## Variables and Types
 - variable is the basic unit of a program
 - integers -> whole numbers
 - floats -> decimal numbers
@@ -9,9 +9,9 @@
 - strings -> collection of characters, plus "+" used to concatenate strings.
 - Booleans -> true or false
 
-# Data structures
+## Data structures
 - allow for the storage of a list of values in a single variable.
-  # List
+  ### List
   - contains any data type
   - length function used to determine the length of the list
   ``` bash
@@ -20,7 +20,7 @@
   len(mylist)
   ```
 
-  # Set
+  ### Set
   - Similar to list but only contains unique elements
   - declared using curly braces
   - orde of elements not important
@@ -28,41 +28,41 @@
   mylist = { 1, 2, 3, 4}
   ```
 
-  # Tuples
+  ### Tuples
   - similar to list, but cannot be modified once declared.
   - useful when storing large amount of data
 
-  # Dictionary
+  ### Dictionary
   - is a collection of key-value pairs.
   - declared using curly braces
   - accessed using keys
 
-# Operators
+## Operators
 - are instructions that perform operations on variables and values
-  # Arithmetic
+  ### Arithmetic
   - Addition (+), Multiplication (*), Division (/) *returns float*, modulus or Remainder (%)
-  # comparison
+  ### comparison
   - evaluates two variables or values and returns a boolean
-  # Logical
+  ### Logical
   - "and" , "or" , "not"
     
-# Control flow
+## Control flow
 - if statement allows you to execute a block of code only if certain condition is met.
 - else statement will be executed if condition is false.
 - for loop is used to iterate over a list or an iterable objects
 
-# Functions
+## Functions
 - is like a machine that takes in inputs and produce output
 - 'def' used to define functions
 - 'return' used to specify output
 - 'None' represent the absence of a value, and it is default return value for functions that explicitly does return anything
 
-# Classes and Objects
+## Classes and Objects
 - CLASSES -> help label and organize related functions and atrributes
           -> we define a class with uppercase letter name
           -> we create an initialisation function that get called every time an instance of a class is created.
 
-# Factorial exercise
+## Factorial exercise
 ```bash
 def factorial(num):
     if type(num) is not int:
@@ -75,8 +75,8 @@ def factorial(num):
         return num * factorial(num-1)
 ```
 
-# 3. BASIC DATA TYPES
-  # Ints and Floats
+## 3. BASIC DATA TYPES
+  ### Ints and Floats
   - we use int class to convert value to integer ( whole number)
   - converting from one type to another is called casting
   - Python does not round floats to integer when casting
@@ -99,17 +99,17 @@ def factorial(num):
    Decimal('3.14') # outputs 3.14
    ```
 
-    # Booleans
+  ### Booleans
     - Integers anything except 0 is true, therefore float 0 and imaginary 0 is false
     - Strings anything other than empty string is true, therefore '' is false
     - Data structures empty list or dictionary is false,
 
-   # Strings
+   ### Strings
    - string slicing is taking a portion of a string and returning it e.g "My name is Iron-Man" string[0:7] *returns* My name
    - F-strings allows to insert variables and expression inside curly brackets in a string. e.g f'My Number is : {5}'
    - also with f-string we can do rounding and number formatting e.g f'Pi is: {math.pi:.2f}'    and    'Pi is: {}'.format(math.pi)
 
-   # Bytes
+   ### Bytes
    - is a sequence of data
      ```bash
      Bytes(4) # creates empty bytes object 4b long
@@ -119,8 +119,8 @@ def factorial(num):
      - Bytes objects are immutable(cannot be modified)
 
 
-# 4. BASIC DATA STRUCTURES
-  # Lists
+## 4. BASIC DATA STRUCTURES
+  ### Lists
   - list slicing is same as string slicing
   - a third value can be used to control the step e.g mylist[start : end : step]
   - negative values is to step backwards through the list
@@ -131,7 +131,7 @@ def factorial(num):
   - when we assign a list to a variable, the variable stores a reference to the list, if we modify the list through one variable, the changes will reflect in other variables that reference the same list.
   - For list changes on one list to another dont reflect we use copy() method
 
-  # sets
+  ### sets
   - is defined using curly brackets
   - also defined by passing any iterable object in the cinstructor
   ```bash
@@ -141,13 +141,13 @@ def factorial(num):
   - used to remove duplicates, as sets only contains unique values
   - you cannot access elements in a set using index or slicing
   - add elements using add() and remove using discard()
-  # Tuples
+  ### Tuples
   - declared with parentheses and are ordered
   - tuples are immutable( cannot be modified)
   - more memory effecient than lists
 
 
-  # Dictionary
+  ### Dictionary
   - stores values in key : value pairs
   - values can be any data and duplicated, whreas keys cannot be repeated and must be immutable
   - resulting object for .keys() is immutable, to change this object, you need to convert it to a list
@@ -156,19 +156,19 @@ def factorial(num):
   ```
 
 
-  # List Comprehensions
+  ### List Comprehensions
   - consists of square brackets cotaining the expression, which is executed for each element along the for loop to iterate over each element, while returning a copy of the list.
   - Syntax : *newCopyList = [ expression(element) for element in oldList if condition]*
   - it enables you to filter / apply functions to every item in a list.
   - 
 
-  # Dictionary and Comprehensions
+  ### Dictionary and Comprehensions
   - used to create a new dictionary from an itearble structure
   - Syntax : *dict = { key:value for (key,value) in Iterable}*
 
 
-# 5. Basic Control Flow
-  # If and Else
+## 5. Basic Control Flow
+  ### If and Else
   - are conditional statements, which decide the direction of the flow of program execution
   - if-statement is used to decide whether a certain block will be executed or not
   ```bash
@@ -196,7 +196,7 @@ def factorial(num):
         statement
   ```
 
-   # While
+   ### While
    - is used to execute a block of statements repeatedly until the condition is meet.
    - when the condition becomes false, the line immediately after the loop is executed
    ```bash
@@ -240,7 +240,7 @@ def factorial(num):
    - *Outputs* -> Current Letter : g
                   Current Letter : k
 
-  # For Loop
+  ### For Loop
   - it is used for iterating over an iterable like String, Tuple, List, Set, or Dictionary
   ```bash
    # for loop syntax
