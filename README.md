@@ -1,8 +1,6 @@
 <week1>
-<summary> # Python Week 1 Notes </summary>
+<summary>Python Week 1 Notes </summary>
 <br>
-  
-
 ## Variables and Types
 - variable is the basic unit of a program
 - integers -> whole numbers
@@ -248,6 +246,6 @@ def factorial(num):
    # for loop syntax
    for var in iterable:
     # statements
-  ``` 
+  ```
 </week1>
 
