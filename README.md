@@ -1,8 +1,7 @@
-[week1](#weeek1)
-
-<a name="weeek1"/>
-# Python Week 1 Notes
-
+<week1>
+<summary> # Python Week 1 Notes </summary>
+<br>
+  
 
 ## Variables and Types
 - variable is the basic unit of a program
@@ -250,3 +249,5 @@ def factorial(num):
    for var in iterable:
     # statements
   ``` 
+</week1>
+
