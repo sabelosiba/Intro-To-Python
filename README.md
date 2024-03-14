@@ -142,7 +142,7 @@ def factorial(num):
   - you cannot access elements in a set using index or slicing
   - add elements using add() and remove using discard()
   # Tuples
-  - declared with parenteses and are ordered
+  - declared with parentheses and are ordered
   - tuples are immutable( cannot be modified)
   - more memory effecient than lists
 
