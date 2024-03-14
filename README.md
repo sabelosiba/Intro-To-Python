@@ -1,7 +1,8 @@
 <details>
-<summary> # Python Week 1 Notes </summary>
+<summary> Week 1 </summary>
 <br>
   
+# Python Week 1 Notes  
 ## Variables and Types
 - variable is the basic unit of a program
 - integers -> whole numbers
