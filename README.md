@@ -1,3 +1,6 @@
+[week1](#weeek1)
+
+<a name="weeek1"/>
 # Python Week 1 Notes
 
 
