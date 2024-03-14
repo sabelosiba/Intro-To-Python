@@ -1,4 +1,4 @@
-<week1>
+<details>
 <summary>Python Week 1 Notes</summary>
 <br>
 ## Variables and Types
@@ -247,5 +247,5 @@ def factorial(num):
    for var in iterable:
     # statements
   ```
-</week1>
+</details>
 
