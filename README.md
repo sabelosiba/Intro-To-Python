@@ -258,7 +258,15 @@ def factorial(num):
   inverted_dict = {value: key for key, value in original_dict.items()}  
     
   print (inverted_dict)  # Outputs {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
-  ```
+
+  sDict = {x.upper(): x*3 for x in 'coding '}
+  print (sDict)  # Outputs {'O': 'ooo', 'N': 'nnn', 'I': 'iii', 'C': 'ccc', 'D': 'ddd', 'G': 'ggg'}
+  
+  # Python code to demonstrate dictionary 
+  # comprehension using if.
+  newdict = {x: x**3 for x in range(10) if x**3 % 4 == 0}
+  print(newdict)  # Outputs {0: 0, 8: 512, 2: 8, 4: 64, 6: 216}
+```
 
 
 ## 5. Basic Control Flow
