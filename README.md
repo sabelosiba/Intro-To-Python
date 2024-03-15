@@ -233,12 +233,32 @@ def factorial(num):
   - it enables you to filter / apply functions to every item in a list.
 
   ```python
+  numbers = [12, 13, 14,] 
+  doubled = [x *2  for x in numbers] 
+  print(doubled)  # Outputs [24, 26, 28]
 
+  # with conditions or filters and nested
+  list = [i for i in range(11) if i % 2 == 0] 
+  print(list)  # Outputs [0, 2, 4, 6, 8, 10]
+
+  myString= 'My Name is Ryan Mitchell. I live in Boston'
+  cleanWord = [[word for word in sentence.split()] for sentence in myString.split('.') ]
+  print(cleanWord)  # Outputs [['My', 'Name', 'is', 'Ryan', 'Mitchell'], ['I', 'live', 'in', 'Boston']]
   ```
 
   ### Dictionary and Comprehensions
   - used to create a new dictionary from an itearble structure
   - Syntax : *dict = { key:value for (key,value) in Iterable}*
+
+  ```python
+  # dict to represent keys and values
+  original_dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4} 
+   
+  # Inverting the dictionary using dictionary comprehension
+  inverted_dict = {value: key for key, value in original_dict.items()}  
+    
+  print (inverted_dict)  # Outputs {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
+  ```
 
 
 ## 5. Basic Control Flow
