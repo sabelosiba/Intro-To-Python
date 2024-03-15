@@ -211,11 +211,11 @@ def factorial(num):
 
   # Accessing values
   print(my_dict['name'])  # Output: John
+  print(my_dict.get('name'))  # Output: John
 
   # Modifying values
   my_dict['age'] = 26
   print(my_dict)  # Output: {'name': 'John', 'age': 26, 'country': 'USA'}
-  print(my_dict.get(0))  # Output: {'name': 'John', 'age': 26, 'country': 'USA'}
  
   # Adding new key-value pairs
   my_dict['occupation'] = 'Developer'
