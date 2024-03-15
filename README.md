@@ -133,28 +133,97 @@ def factorial(num):
   - when we assign a list to a variable, the variable stores a reference to the list, if we modify the list through one variable, the changes will reflect in other variables that reference the same list.
   - For list changes on one list to another dont reflect we use copy() method
 
+  ```python
+  # Creating a list
+  my_list = [1, 2, 3, 4, 5]
+  my_list = list(range(0,6))  # using list class construtor
+
+  # Accessing elements
+  print(my_list[0])  # Output: 1
+  print(my_list.get(0))  # Output: 1
+
+  # Modifying elements
+  my_list[1] = 10
+  print(my_list)  # Output: [1, 10, 3, 4, 5]
+
+  # Appending elements
+  my_list.append(6)
+  print(my_list)  # Output: [1, 10, 3, 4, 5, 6]
+  my_list.insert(2, 3)
+  print(my_list)  # Output: [1, 10, 3, 3, 4, 5, 6]
+
+  # Removing elements
+  my_list.remove(3)  
+  print(my_list)  # Output: [1, 10, 3, 4, 5, 6]
+  print(my_list.pop())  # Output: 6
+  print(my_list)  # Output:  [1, 10, 3, 4, 5]
+  ```
+
   ### sets
   - is defined using curly brackets
+  - unordered collections of unique elements, mutable
   - also defined by passing any iterable object in the cinstructor
-  ```bash
-  myset = { 'a', 'b', 'c'}  # curly brackets
-  myset = set(('a', 'b', 'c')) # constructor
-  ```
   - used to remove duplicates, as sets only contains unique values
   - you cannot access elements in a set using index or slicing
   - add elements using add() and remove using discard()
+  ```python
+  # Creating a set
+  my_set = {1, 2, 3, 4, 5}  # curly brackets
+  my_set = set([1, 2, 3, 4, 5]) # using constructor
+  
+  # Adding elements
+  my_set.add(6)
+  print(my_set)  # Output: {1, 2, 3, 4, 5, 6}
+  
+  # Removing elements
+  my_set.remove(3)
+  print(my_set)  # Output: {1, 2, 4, 5, 6}
+  my_set.discard(4)
+  print(my_set)  # Output: {1, 2, 5, 6}
+  ```
+
   ### Tuples
   - declared with parentheses and are ordered
-  - tuples are immutable( cannot be modified)
+  - tuples are immutable( cannot be modified) that can store multiple elements
   - more memory effecient than lists
+  - Tuples are suitable where the data should not be modified once defined.
+  - the elements in the tuple cannot be added or removed once created. 
+  ```python
+  # Creating a tuple
+  my_tuple = (1, 2, 3, 4, 5)
+  my_tuple = tuple([1, 2, 4, 5, 6]) # Creating a Tuple with list by construtor
 
+  # Accessing elements
+  print(my_tuple[0])  # Output: 1
+
+  # Tuple unpacking
+  a, b, c, d, e = my_tuple
+  print(c)  # Output: 3
+  ```
 
   ### Dictionary
   - stores values in key : value pairs
   - values can be any data and duplicated, whreas keys cannot be repeated and must be immutable
   - resulting object for .keys() is immutable, to change this object, you need to convert it to a list
-  ```bash
-  
+  ```python
+  # Creating a dictionary
+  my_dict = {'name': 'John', 'age': 25, 'country': 'USA'}
+
+  # Accessing values
+  print(my_dict['name'])  # Output: John
+
+  # Modifying values
+  my_dict['age'] = 26
+  print(my_dict)  # Output: {'name': 'John', 'age': 26, 'country': 'USA'}
+  print(my_dict.get(0))  # Output: {'name': 'John', 'age': 26, 'country': 'USA'}
+ 
+  # Adding new key-value pairs
+  my_dict['occupation'] = 'Developer'
+  print(my_dict)  # Output: {'name': 'John', 'age': 26, 'country': 'USA', 'occupation': 'Developer'}
+
+  # Removing key-value pairs
+  del my_dict['country']
+  print(my_dict)  # Output: {'name': 'John', 'age': 26, 'occupation': 'Developer'}
   ```
 
 
@@ -162,7 +231,10 @@ def factorial(num):
   - consists of square brackets cotaining the expression, which is executed for each element along the for loop to iterate over each element, while returning a copy of the list.
   - Syntax : *newCopyList = [ expression(element) for element in oldList if condition]*
   - it enables you to filter / apply functions to every item in a list.
-  - 
+
+  ```python
+
+  ```
 
   ### Dictionary and Comprehensions
   - used to create a new dictionary from an itearble structure
