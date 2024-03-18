@@ -1,7 +1,7 @@
 <details>
 <summary> Week 1 </summary>
 <br>
-  
+
 # Python Week 1 Notes  
 ## Variables and Types
 - variable is the basic unit of a program
@@ -374,7 +374,24 @@ def factorial(num):
   - Onced a function has default argument, all the arguments to its right must also have default values.
 
   ### *args
-  - 
-    
+  - is used to pass a variable number of arguments to a function.
+  - uses the asterisk symbol(*) before the argument name to create a pointer to the inputted variables.
+  - Syntax : def function_name( *args ):
 
+  ### **kwargs
+  - is used to pass through keyword arguments
+  - a keyword argument is where you provide a name to the variable as you pass it into function.
+  - printing kwargs to see that the keyword arguments are stored in a dictionary, because keyword arguments have keys and values passed in any order.
+  - 
+
+  ### Variable and scope
+  - locals function
+    -> allows us to access all varibles within a python function returns a dictionary.
+    -> cannot reference a variable outside its scope and cannot modify the data of variable
+  - globals function
+    -> returns the dictionary of all gloabal variables
+    -> we can also change the value of global variables using globals function.
+
+  ### Functions as variables
+  
 </details>
