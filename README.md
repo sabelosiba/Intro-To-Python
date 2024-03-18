@@ -60,9 +60,10 @@
 - 'None' represent the absence of a value, and it is default return value for functions that explicitly does return anything
 
 ## Classes and Objects
-- CLASSES -> help label and organize related functions and atrributes
-          -> we define a class with uppercase letter name
-          -> we create an initialisation function that get called every time an instance of a class is created.
+- CLASSES
+  -> help label and organize related functions and atrributes
+  -> we define a class with uppercase letter name
+  -> we create an initialisation function that get called every time an instance of a class is created.
 
 ## Factorial exercise
 ```bash
@@ -86,15 +87,17 @@ def factorial(num):
   Int(8.9) # outputs 8
   ```
   - round function can mitigate the approximation and rounding errors from floats calculations
-  - The Int class -> you can pass string and convert it to an integer
-                  -> you can also pass a second arguments which represents a base of the first argument and the class will convert it from the given base to base 10
+  - The Int class
+    -> you can pass string and convert it to an integer
+    -> you can also pass a second arguments which represents a base of the first argument and the class will convert it from the given base to base 10
 
    ```bash
      Int('100') # outputs 100
      Int('100' , 2 ) # outputs 4
    ```
-  - The Decimal class -> you can pass in a value and decimal object will with decimal place for the given precision
-                      -> good practise is to pass in a float as a string to prevent the float to be added all leading digits of the float. 
+  - The Decimal class
+    -> you can pass in a value and decimal object will with decimal place for the given precision
+    -> good practise is to pass in a float as a string to prevent the float to be added all leading digits of the float. 
    ```bash
      getcontext().prec=2
      Decimal(1)/Decimal(3)  # outputs 0.33
@@ -128,8 +131,9 @@ def factorial(num):
   - negative values is to step backwards through the list
   - to add item to end of list use append()
   - to insert item aat specific position use insert(*position, value*)
-  - 2 ways to remove -> remove() removes item based on value, no index
-                     -> pop() removes and return item at the end of list
+  - 2 ways to remove
+    -> remove() removes item based on value, no index
+    -> pop() removes and return item at the end of list
   - when we assign a list to a variable, the variable stores a reference to the list, if we modify the list through one variable, the changes will reflect in other variables that reference the same list.
   - For list changes on one list to another dont reflect we use copy() method
 
@@ -355,5 +359,22 @@ def factorial(num):
 <details>
 <summary> Week 2 </summary>
 <br>
+
+# Python Week 2 Notes - Fundamentals
+## 1. Basic Functions
+  ### Functions
+  - is a block of statements to return a specific task.
+  - composed of a name and parameters, denoted by def keyword
+  - Function Syntax - *def function_name(parameters):*
+  - types of function arguments
+    -> named parameters ( Default arguments), positional arguments and *args and **kwargs
+
+  ### Name parameters
+  - is parameter that assumes a default value if value is not provided in then function call for that argument.
+  - Onced a function has default argument, all the arguments to its right must also have default values.
+
+  ### *args
+  - 
+    
 
 </details>
