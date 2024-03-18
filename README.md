@@ -351,3 +351,9 @@ def factorial(num):
   ```
 </details>
 
+
+<details>
+<summary> Week 2 </summary>
+<br>
+
+</details>
