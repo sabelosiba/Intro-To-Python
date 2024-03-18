@@ -395,7 +395,27 @@ def factorial(num):
   ### Functions as variables
 
 ## Classes and Objects Fundamentals
+  - An Object is an instance of a class, A class is a blueprint while an instance is a copy of a class with actual values.
+  ```python
+  class Dog:
+    attr1 = "mammal"
+    attr2 = "dog"
 
+    # A sample method
+    def fun(self):
+        print("I'm a", self.attr1)
+        print("I'm a", self.attr2)
+
+  Rodger = Dog()
+  print(Rodger.attr1) # Outputs mammal
+  Rodger.fun()  # Outputs I'm a mammal
+                #         I'm a dog
+  ```  
+  ### Static Attributes
+  - also called class variable
+
+  ### Python Inheritance
+  - allows us to define a class all the methosan d properties from another class
   
   
 </details>
