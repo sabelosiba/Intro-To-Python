@@ -393,5 +393,9 @@ def factorial(num):
     -> we can also change the value of global variables using globals function.
 
   ### Functions as variables
+
+## Classes and Objects Fundamentals
+
+  
   
 </details>
