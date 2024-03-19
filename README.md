@@ -415,7 +415,10 @@ def factorial(num):
   - also called class variable
 
   ### Python Inheritance
-  - allows us to define a class all the methosan d properties from another class
+  - allows us to define a class to inherit all the methods and properties from another class
+  - the inheritance process happens automatically when child class is created.
+  - if the child class defines an attribute/method the same as parent class, the child will overwrite the parent's version.
+  - 
   
   
 </details>
