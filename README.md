@@ -61,9 +61,9 @@
 
 ## Classes and Objects
 - CLASSES
-  -> help label and organize related functions and atrributes
-  -> we define a class with uppercase letter name
-  -> we create an initialisation function that get called every time an instance of a class is created.
+  - help label and organize related functions and atrributes
+  - we define a class with uppercase letter name
+  - we create an initialisation function that get called every time an instance of a class is created.
 
 ## Factorial exercise
 ```bash
@@ -88,16 +88,16 @@ def factorial(num):
   ```
   - round function can mitigate the approximation and rounding errors from floats calculations
   - The Int class
-    -> you can pass string and convert it to an integer
-    -> you can also pass a second arguments which represents a base of the first argument and the class will convert it from the given base to base 10
+    - you can pass string and convert it to an integer
+    - you can also pass a second arguments which represents a base of the first argument and the class will convert it from the given base to base 10
 
    ```bash
      Int('100') # outputs 100
      Int('100' , 2 ) # outputs 4
    ```
   - The Decimal class
-    -> you can pass in a value and decimal object will with decimal place for the given precision
-    -> good practise is to pass in a float as a string to prevent the float to be added all leading digits of the float. 
+    - you can pass in a value and decimal object will with decimal place for the given precision
+    - good practise is to pass in a float as a string to prevent the float to be added all leading digits of the float. 
    ```bash
      getcontext().prec=2
      Decimal(1)/Decimal(3)  # outputs 0.33
@@ -132,8 +132,8 @@ def factorial(num):
   - to add item to end of list use append()
   - to insert item aat specific position use insert(*position, value*)
   - 2 ways to remove
-    -> remove() removes item based on value, no index
-    -> pop() removes and return item at the end of list
+    - remove() removes item based on value, no index
+    - pop() removes and return item at the end of list
   - when we assign a list to a variable, the variable stores a reference to the list, if we modify the list through one variable, the changes will reflect in other variables that reference the same list.
   - For list changes on one list to another dont reflect we use copy() method
 
@@ -367,7 +367,7 @@ def factorial(num):
   - composed of a name and parameters, denoted by def keyword
   - Function Syntax - *def function_name(parameters):*
   - types of function arguments
-    -> named parameters ( Default arguments), positional arguments and *args and **kwargs
+    - named parameters ( Default arguments), positional arguments and *args and **kwargs
 
   ### Name parameters
   - is parameter that assumes a default value if value is not provided in then function call for that argument.
@@ -386,11 +386,11 @@ def factorial(num):
 
   ### Variable and scope
   - locals function
-    -> allows us to access all varibles within a python function returns a dictionary.
-    -> cannot reference a variable outside its scope and cannot modify the data of variable
+    - allows us to access all varibles within a python function returns a dictionary.
+    - cannot reference a variable outside its scope and cannot modify the data of variable
   - globals function
-    -> returns the dictionary of all gloabal variables
-    -> we can also change the value of global variables using globals function.
+    - returns the dictionary of all gloabal variables
+    - we can also change the value of global variables using globals function.
 
   ### Functions as variables
 
