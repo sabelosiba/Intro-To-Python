@@ -418,7 +418,24 @@ def factorial(num):
   - allows us to define a class to inherit all the methods and properties from another class
   - the inheritance process happens automatically when child class is created.
   - if the child class defines an attribute/method the same as parent class, the child will overwrite the parent's version.
-  - 
+
+
+
+## 3. Error Handling Fundamentals
+  ### Handling errors and Exceptions
+  - Try and except statements are used to catch and handle exceptions in python.
+  - Syntax
+  ```python
+  try:
+      # Some Code....  
+  except:
+      # Handling of exception (if required)
+  else:
+      # execute if no exception
+  finally:
+      # Some code .....(always executed)
+  ```
+
   
   
 </details>
