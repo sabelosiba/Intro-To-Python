@@ -435,7 +435,33 @@ def factorial(num):
   finally:
       # Some code .....(always executed)
   ```
+  - Catching Exceptions by Type, eg ZeroDividionError, TypeError, SyntaxError and IOError
+  - 
 
-  
+# 4. Threads and Prosses
+  ### Fundamentals of Threads and Processes
+  - computers have both memory and file storage
+  - The OS is responsible for allocating memomry to wach process, so it puts walls between processes for them not to access each other's memory.
+  - A process can have multiple threads and execute code at the same time in parallel.
+  - A process is an instance of a computer program that is beigng executed.
+  - A thread is an entity within a process that is scheduled for execution.
+  - multiple threads can be scheduled in one process
+  - Multithreading is the ability of a processor to execute multiple threads concurrently, In single core CPU its achieved by context switching.
+  ```python
+  #import 
+  import threading
+
+  # creating a thread
+  t1 = threading.Thread(target, args)
+  t2 = threading.Thread(target, args)
+
+  #starting a thread
+  t1.start()
+  t2.start()
+
+  # join to check if thread finished running
+  t1.join()
+  t2.join()
+  ```
   
 </details>
