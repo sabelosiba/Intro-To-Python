@@ -438,7 +438,7 @@ def factorial(num):
   - Catching Exceptions by Type, eg ZeroDividionError, TypeError, SyntaxError and IOError
   - 
 
-# 4. Threads and Prosses
+## 4. Threads and Prosses
   ### Fundamentals of Threads and Processes
   - computers have both memory and file storage
   - The OS is responsible for allocating memomry to wach process, so it puts walls between processes for them not to access each other's memory.
@@ -463,5 +463,25 @@ def factorial(num):
   t1.join()
   t2.join()
   ```
-  - start function to start the thread and join function checks to see if the thread has completed execution yet and wait until execution is complete
+  - start function to start the thread and join function checks to see if the thread has completed execution yet and wait until execution is complete.
+
+## 5. Fundamentals of Files
+  ### Opening, Reading and Writing
+
+
+# Python week 3 - Module focus
+- Finding Inspiration for Python projects.
+- Planning your Python Projects
+- Create and implement User stories and Use cases
+- Define and collate project requirements and program architecture
+- Designing a project Graphical User Interface (GUI)
+- Packaging and publishing Python projects
+## 1. Project planning
+## 2. Content Retrieval
+## 3. Digest email
+## 4. Nuilding a GUI
+## 5. Design Iterarion
+## 6. Project Packaging and Distribution
+
+
 </details>
