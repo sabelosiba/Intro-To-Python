@@ -496,6 +496,9 @@ def factorial(num):
   ### Project Requirments
   - functional requirements describe what the application should or should not do, and written a sentences starting with "the application must/shall"
   - non-functional requirements describe how the application should accomplish its tasks. e.g maintainability, reliability and usability.
+
+  ### Architecture
+  - 
 ## 2. Content Retrieval
 ## 3. Digest email
 ## 4. Nuilding a GUI
