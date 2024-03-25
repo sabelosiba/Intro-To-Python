@@ -467,8 +467,12 @@ def factorial(num):
 
 ## 5. Fundamentals of Files
   ### Opening, Reading and Writing
+</details>
 
-
+<details>
+<summary> Week 3 </summary>
+<br>
+  
 # Python week 3 - Module focus
 - Finding Inspiration for Python projects.
 - Planning your Python Projects
@@ -477,6 +481,21 @@ def factorial(num):
 - Designing a project Graphical User Interface (GUI)
 - Packaging and publishing Python projects
 ## 1. Project planning
+  - project ideas
+    - myTeams - sports updates and stats on my favourate teams and also teams will facing next
+    - gamingHub - gives me updates on new games realeses, new packages upload and upcoming games
+    - Music - updates me when my fav. artist drops new project
+  ### User stories 
+  - As a [role] , i want [goal] , so that [reason]
+  - As a user, i want guess the number so that i can win.
+  - As a user, i want to check score table so that i know what score to get.
+
+  ### Use cases
+  - title [goal?] , Actor [who desires it?] , scenario [how is it accomplished?]
+
+  ### Project Requirments
+  - functional requirements describe what the application should or should not do, and written a sentences starting with "the application must/shall"
+  - non-functional requirements describe how the application should accomplish its tasks. e.g maintainability, reliability and usability.
 ## 2. Content Retrieval
 ## 3. Digest email
 ## 4. Nuilding a GUI
