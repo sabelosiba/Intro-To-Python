@@ -463,5 +463,5 @@ def factorial(num):
   t1.join()
   t2.join()
   ```
-  
+  - start function to start the thread and join function checks to see if the thread has completed execution yet and wait until execution is complete
 </details>
