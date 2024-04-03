@@ -1,6 +1,6 @@
 import datetime
-
 import collections 
+
 # my dictionary format is  {'date': { 'Income'  : [(category, amount)]   , 'Expense' :  [(category, amount)] }}
 mydict = {  }
 
@@ -70,7 +70,8 @@ def  delit():
             break
         select = input("Enter a date, TYPE and Category you want to remove a transaction for separated by comma : ")
     
-
+def balance():
+    pass
     
 while True:
     select = input("add (a) , list expenses (l) , Update (u) or delete an expense (d) or 0  to exit? : ")
