@@ -18,7 +18,7 @@ def add():
             #mydict[date][type_of_transaction] = []
             
             mydict[date][type_of_transaction].append( (category, amount) )
-            saveToFile(type,category,amount)
+            
         elif choice == 'e':
             type_of_transaction = "Expense"
             category = input("Enter a category name for Expense :")
@@ -56,7 +56,19 @@ def  update():
     pass
 
 def  delit():
-    pass
+    while True:
+        select = input("Enter a date, TYPE and Category you want to remove a transaction for separated by comma : ")
+        select = select.split(", ")
+        print(select[0] + "\n" + select[1] +"\n" +select[2])
+        for t in mydict[select[0]][select[1]]:
+            if  t[0] == select[2]:
+                mydict[select[0]][select[1]].remove(t)
+        print(f'Transaction Removed from {select[0]} on {select[1]}: ')
+        
+        conti = input("\nDo you wish to continue removing more items? Y/N : ")
+        if conti.lower() != 'y':
+            break
+        select = input("Enter a date, TYPE and Category you want to remove a transaction for separated by comma : ")
     
 
     
