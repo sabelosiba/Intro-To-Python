@@ -471,6 +471,32 @@ def factorial(num):
   # Cube of 2 is 8
   ```
   - start function to start the thread and join function checks to see if the thread has completed execution yet and wait until execution is complete.
+```python
+  # importing the multiprocessing module 
+  import multiprocessing 
+  # calculate cube of a number
+  def squaref(num):
+    print(f'Square of {num} is {num*num}')
+  # calculate cube of a number
+  def cubef(num):
+    print(f'Cube of {num} is {num*num*num}')
+
+  # creating a thread
+  p1 = multiprocessing.Process(target=squaref, args=(10,))
+  p2 = multiprocessing.Process(target=cubef, args=(10,))
+
+  # starting p1 and p2 processes
+  p1.start()
+  2.start()
+
+  # join to check if process finished running or wait
+  p1.join()
+  p2.join()
+
+  # Output
+  # Square of 10 is 100
+  # Cube of 10 is 1000
+  ```
 
 ## 5. Fundamentals of Files
   ### Opening, Reading and Writing
