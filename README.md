@@ -465,6 +465,10 @@ def factorial(num):
   # join to check if thread finished running
   t1.join()
   t2.join()
+
+  # Output
+  # Cube of 5 is 125
+  # Cube of 2 is 8
   ```
   - start function to start the thread and join function checks to see if the thread has completed execution yet and wait until execution is complete.
 
