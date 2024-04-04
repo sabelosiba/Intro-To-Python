@@ -450,10 +450,13 @@ def factorial(num):
   ```python
   #import 
   import threading
+  # calculate cube of a number
+  def cubef(num):
+    print(f'Cube of {num} is {num*num*num}')
 
   # creating a thread
-  t1 = threading.Thread(target, args)
-  t2 = threading.Thread(target, args)
+  t1 = threading.Thread(target=cubef, args=(5,))
+  t2 = threading.Thread(target=cubef, args=(25,))
 
   #starting a thread
   t1.start()
