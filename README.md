@@ -500,6 +500,23 @@ def factorial(num):
 
 ## 5. Fundamentals of Files
   ### Opening, Reading and Writing
+  - open a file in read mode(r), write mode(w) or appending(a).
+  - close a file everytime you done with any operation.
+
+  ### CSV
+  - CSV (Comma Separated Values) is a simple file format used to store tabular data.
+  - Reading from a CSV file is done using the reader object.
+  - next() extract row from the file
+  - To write to a CSV file, we use a writer object
+  - we use writerow method to write the each row, and We use writerows method to write multiple rows at once.
+  - To write a dictionary to a CSV file, the file object (csvfile) is converted to a DictWriter object.
+    
+  ### JSON
+  - The loads() method is used to parse JSON strings in Python and the result will be a Python dictionary.
+  - load() method can read a file that contains a JSON object.
+  - dumps() method can convert a Python object into a JSON string.
+  - dump() method can be used for writing to JSON file.
+  - 
 </details>
 
 <details>
@@ -531,7 +548,8 @@ def factorial(num):
   - non-functional requirements describe how the application should accomplish its tasks. e.g maintainability, reliability and usability.
 
   ### Architecture
-  - 
+  - looking at requirements, use cases and user stories, identifying nouns helps to determine potential objects.
+    
 ## 2. Content Retrieval
 ## 3. Digest email
 ## 4. Nuilding a GUI
